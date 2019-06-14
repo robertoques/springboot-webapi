@@ -1,5 +1,7 @@
 package cl.roberto.webapi.eventos.entities;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 import lombok.extern.log4j.Log4j;
@@ -11,8 +13,10 @@ import java.util.Date;
 @Slf4j
 @ToString
 @NoArgsConstructor
+@ApiModel(description = "Entidad pedido")
 public class Pedido {
 
+    @ApiModelProperty(notes = "Identificador entidad")
     private int id;
     @Min(value = 2, message = "Min2")
     @Max(value = 100, message = "Max100")
