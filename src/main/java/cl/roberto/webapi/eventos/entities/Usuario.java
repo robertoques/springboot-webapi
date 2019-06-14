@@ -1,11 +1,11 @@
 package cl.roberto.webapi.eventos.entities;
 
-public class usuario {
+public class Usuario {
 
     private int id;
     private String nombre;
 
-    public usuario(int id, String nombre) {
+    public Usuario(int id, String nombre) {
         this.id = id;
         this.nombre = nombre;
     }

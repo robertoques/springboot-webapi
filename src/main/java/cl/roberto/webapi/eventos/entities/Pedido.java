@@ -2,14 +2,14 @@ package cl.roberto.webapi.eventos.entities;
 
 import java.util.Date;
 
-public class pedido {
+public class Pedido {
 
     private int id;
     private int cantidad;
     private String producto;
     private Date fecha;
 
-    public pedido(int id, int cantidad, String producto, Date fecha) {
+    public Pedido(int id, int cantidad, String producto, Date fecha) {
         this.id = id;
         this.cantidad = cantidad;
         this.producto = producto;
